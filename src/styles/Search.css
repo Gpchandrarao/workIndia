@@ -1,0 +1,15 @@
+.search-container {
+  position: relative;
+  top: 90px;
+  min-height: 100vh;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  position: relative;
+  top: 80px;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}

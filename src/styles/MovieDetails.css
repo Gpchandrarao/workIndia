@@ -1,0 +1,138 @@
+.movidetail-container {
+  position: relative;
+  top: 85px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.background-image-container {
+  margin: 30px;
+  height: 350px;
+  width: 95%;
+  border: 1px solid #0ef;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.img {
+  width: 130px;
+  height: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.img:hover {
+  filter: drop-shadow(3px 3px 10px#0ef);
+}
+
+.image-heading-container {
+  background-color: transparent;
+  display: flex;
+  gap: 30px;
+}
+
+.details-info {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.details-info p {
+  background-color: transparent;
+}
+
+.image-heading-container h1 {
+  background-color: transparent;
+  font-size: 20px;
+}
+
+.time-genres {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 10px 0;
+}
+.time-genres p {
+  background-color: transparent;
+}
+
+.run-time {
+  border: 1px solid #0ef;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.over {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: transparent;
+}
+
+.over p,
+h1 {
+  background-color: transparent;
+}
+.over p {
+  width: 950px;
+  margin-bottom: 30px;
+
+  font-size: 15px;
+}
+
+.li {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  list-style-type: none;
+  grid-gap: 30px;
+  margin: 30px 15px 0 15px;
+}
+
+.profile-pics {
+  width: 200px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s;
+  margin-bottom: 8px;
+}
+
+.profile-pics:hover {
+  filter: drop-shadow(3px 3px 10px#0ef);
+}
+
+@media screen and (max-width: 480px) {
+  /* Styles for mobile phones in portrait mode */
+  .background-image-container {
+    margin: 0 10px 15px 10px;
+  }
+  .over p {
+    width: 150px;
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  .cast-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  /* Styles for mobile phones in landscape mode */
+  .over p {
+    width: 350px;
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Styles for tablets in portrait mode */
+  .over p {
+    width: 550px;
+    font-size: 20px;
+  }
+}
